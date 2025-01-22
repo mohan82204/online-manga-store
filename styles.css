@@ -1,0 +1,868 @@
+/* Add your CSS styling here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Container for books, using Flexbox for horizontal layout */
+.book-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow books to wrap onto the next line if there's not enough space */
+    justify-content: space-around; /* Distribute space evenly between items */
+}
+
+.book {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 15px;
+    width: 200px; /* Set a fixed width for each book */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add some shadow for a better appearance */
+    border-radius: 5px; /* Rounded corners */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+/* Hide the cart section by default */
+#cart-section.hidden {
+    display: none;
+}
+
+/* Show the section when active */
+#cart-section.active {
+    display: block;
+}
+
+#book-section.active {
+    display: block;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.book {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+}
+
+.book img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Style the cart items with space */
+#cart-list li {
+    padding: 10px 0; /* Adds vertical padding between items */
+    border-bottom: 1px solid #ccc; /* Optional: Adds a bottom border for separation */
+    margin-bottom: 10px; /* Adds space between the cart items */
+}
+/* Center the entire cart section */
+#cart-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text inside the section */
+    margin: 20px auto; /* Add some space around the cart section */
+    width: 80%; /* Optional: Limit the width of the cart section */
+}
+
+#cart-list {
+    list-style-type: none; /* Remove bullet points from the list */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#cart-list li {
+    padding: 15px;
+    border-bottom: 1px solid #ccc; /* Optional: Adds a bottom border for separation */
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between; /* Separate item name and remove button */
+    align-items: center;
+}
+
+#cart-list button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#cart-list button:hover {
+    background-color: darkred;
+}
+
+#total-price {
+    font-weight: bold;
+    margin-top: 20px;
+}
+/* Center the entire cart section */
+#cart-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text inside the section */
+    margin: 20px auto;
+    width: 80%; /* Optional: Limit the width of the cart section */
+}
+
+/* Style the cart list */
+#cart-list {
+    list-style-type: none; /* Remove bullet points from the list */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+/* Style each cart item */
+#cart-list li {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between; /* Separate book name and remove button */
+    align-items: center;
+}
+
+/* Style for the remove button */
+#cart-list button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#cart-list button:hover {
+    background-color: darkred;
+}
+
+/* Style the total price */
+#total-price {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Style the checkout button */
+#checkout-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px; /* Adds some space between the total and the button */
+}
+
+#checkout-button:hover {
+    background-color: darkgreen;
+}
+/* Style the checkout section */
+#checkout-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+    width: 50%;
+}
+
+#checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Adds space between form fields */
+    width: 100%;
+}
+
+#checkout-form input, 
+#checkout-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#checkout-form button {
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#checkout-form button:hover {
+    background-color: darkgreen;
+}
+
+
+
+
+/* General styling for body */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 600;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Checkout Section */
+#checkout-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.checkout-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.checkout-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.form-group textarea {
+    resize: none;
+    height: 80px;
+}
+
+/* Checkout Button */
+button {
+    background-color: #27ae60;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #2ecc71;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .checkout-container {
+        padding: 20px;
+    }
+}
+
+
+
+
+
+
+/* Styles for Buttons (Remove and Checkout) */
+button {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px; /* Adjust padding to make buttons smaller */
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    width: auto; /* Change from 100% to auto to make buttons normal size */
+    display: inline-block; /* Keep buttons inline */
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #2ecc71;
+}
+
+/* Style specific to the Remove button */
+.remove-btn {
+    background-color: #e74c3c;
+    padding: 8px 15px; /* Make the remove button slightly smaller */
+    font-size: 14px;
+}
+
+.remove-btn:hover {
+    background-color: #c0392b;
+}
+
+
+
+
+/* Style for book images (both home page and cart) */
+.book img {
+    width: 150px; /* Adjust the width to the desired size */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Optional: Adds some spacing below the image */
+}
+
+/* Additional styles if needed for layout consistency */
+.cart-item img {
+    width: 150px; /* Same size for the cart images */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Layout */
+main {
+    padding: 20px;
+}
+
+/* Book Section Styles */
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.book {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+}
+
+.book img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.book h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.book p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.book button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book button:hover {
+    background-color: #218838;
+}
+
+/* Cart Page Styles */
+.cart-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.cart-item-info {
+    flex: 1;
+}
+
+.cart-item button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart-item button:hover {
+    background-color: #c82333;
+}
+
+/* Checkout Page Styles */
+.checkout-form {
+    width: 90%;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.checkout-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-form button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+
+
+/* Styles for the login form */
+.login-form {
+    width: 90%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #218838;
+}
+
+
+
+
+
+.login-form {
+    width: 90%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #218838;
+}
+
+
+
+
+
+
+
+/* General body style for all pages */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Background image styling for login, register, and adminlogin pages */
+.login-container, .register-container, .adminlogin-container {
+    background-image: url('path/to/your/background-image.jpg');
+    background-size: cover;  /* Ensure the image covers the full page */
+    background-position: center;
+    height: 100vh; /* Full height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Add a transparent background for the form */
+form {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the buttons */
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+h1 {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Optional: Add some padding to space out the input fields */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Styling for Login Page */
+body.login-page {
+    background-image: url('images/login-background.jpg');
+}
+
+/* Styling for Register Page */
+body.register-page {
+    background-image: url('images/register-background.jpg');
+}
+
+/* Styling for Admin Login Page */
+body.adminlogin-page {
+    background-image: url('images/admin-background.jpg');
+}
+
+/* Form container common styling */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9); /* White with transparency */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 80px;
+}
+
+/* Button styling */
+button {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Input fields styling */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Back button */
+.back-button {
+    display: block;
+    text-decoration: none;
+    margin-top: 10px;
+    color: #007BFF;
+    font-size: 14px;
+}
+
+
+
+
+
+/* Add styles for the back buttons */
+.back-button {
+    display: block;
+    text-decoration: none;
+    margin: 10px 0; /* 10px margin on top and bottom */
+    color: #007BFF;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Add space between the back buttons */
+.back-button:first-of-type {
+    margin-bottom: 20px; /* Adds more space between the first and second button */
+}
+

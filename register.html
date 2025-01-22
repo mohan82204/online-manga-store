@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Online Book Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #e9ecef, #ffffff);
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 400px;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .header {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #343a40;
+        }
+        input[type="text"], input[type="password"], input[type="tel"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+            width: 100%;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Create Account</div>
+        <form id="register-form" onsubmit="handleRegister(event)">
+            <input type="text" id="register-username" placeholder="Username" required>
+            <input type="password" id="register-password" placeholder="Password" required>
+            <input type="tel" id="register-phone" placeholder="Phone Number" required>
+            <input type="email" id="register-email" placeholder="Email" required>
+            <button type="submit">Register</button>
+        </form>
+        <button onclick="location.href='login.html'" style="margin-top: 10px;">Back</button>
+    </div>
+
+    <script>
+        function handleRegister(event) {
+            event.preventDefault();
+            const username = document.getElementById('register-username').value;
+            const password = document.getElementById('register-password').value;
+            const phone = document.getElementById('register-phone').value;
+            const email = document.getElementById('register-email').value;
+
+            const users = JSON.parse(localStorage.getItem('users')) || [];
+            users.push({ username, password, phone, email });
+            localStorage.setItem('users', JSON.stringify(users));
+            alert('Registration successful!');
+            window.location.href = 'login.html';
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Online Book Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add your styling here */
+    </style>
+</head>
+<body>
+    
+    <script>
+        function handleRegistration(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const phone = document.getElementById('phone').value;
+
+            // Check if the username already exists
+            let users = JSON.parse(localStorage.getItem('users')) || [];
+            if (users.some(user => user.username === username)) {
+                alert('Username already exists. Please choose another.');
+                return;
+            }
+
+            // Save the user details
+            users.push({ username, password, phone });
+            localStorage.setItem('users', JSON.stringify(users));
+            alert('Registration successful!');
+
+            // Optionally redirect to login
+            window.location.href = 'login.html';
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="register-page">
+   
+</body>
+</html>
+
